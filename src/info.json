@@ -1,0 +1,12 @@
+{
+  "appName": "Xebia Academy",
+  "tagline": "Level up your cloud & DevOps skills",
+  "contact": {
+    "email": "support@xebia.com",
+    "phone": "+91-98765-43210"
+  },
+  "social": {
+    "website": "https://xebia.com",
+    "linkedin": "https://linkedin.com/company/xebia"
+  }
+}

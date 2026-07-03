@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=PT+Serif:ital@1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased transition-colors dark:bg-night-bg dark:text-white;
+  }
+}
+
+@layer components {
+  /* Reusable field wrapper matching the Figma outlined inputs. */
+  .field-label {
+    @apply absolute -top-2 left-3 bg-white px-1 text-xs font-medium text-velvet;
+  }
+}

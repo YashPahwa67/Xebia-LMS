@@ -1,0 +1,50 @@
+// Mock data for the Manager (Workforce & Operations) portal — M02. Stands in for API responses.
+
+export const MANAGER_OVERVIEW = {
+  manager: { name: "Mannat Kapoor", email: "manager@xebia.lms" },
+  stats: [
+    { id: "trainers", value: 12, label: "Active trainers", tone: "ink" },
+    { id: "orgs", value: 4, label: "Organisations", tone: "ink" },
+    { id: "batches", value: 7, label: "Running batches", tone: "ink" },
+    { id: "pending", value: 5, label: "Pending approvals", tone: "orange" },
+  ],
+  // Decisions taken per weekday (mini chart).
+  decisions: [4, 6, 3, 7, 5, 2, 1],
+};
+
+// Onboarded trainers (M02 — trainer).
+export const MGR_TRAINERS = [
+  { name: "GS Dwivedi", type: "INTERNAL", domain: "Full Stack · DevOps", orgs: 2, status: "ACTIVE" },
+  { name: "Rohan Mehta", type: "EXTERNAL", domain: "Data & ML", orgs: 1, status: "ACTIVE" },
+  { name: "Priya Sharma", type: "INTERNAL", domain: "Cloud", orgs: 1, status: "INACTIVE" },
+];
+
+// Onboarded organisations / universities (M02 — organisation, university).
+export const MGR_ORGS = [
+  { name: "State Technical University", type: "UNIVERSITY", branch: "Pune", status: "ACTIVE" },
+  { name: "Bennett University", type: "UNIVERSITY", branch: "Greater Noida", status: "ACTIVE" },
+  { name: "Acme Corp", type: "CORPORATE", branch: "Bengaluru", status: "ACTIVE" },
+];
+
+// Trainer↔org/domain assignments (M02 — trainer_org_link).
+export const MGR_ASSIGNMENTS = [
+  { trainer: "GS Dwivedi", org: "State Technical University", domain: "DevOps & Cloud", status: "ACTIVE" },
+  { trainer: "GS Dwivedi", org: "Bennett University", domain: "Full Stack", status: "ACTIVE" },
+  { trainer: "Rohan Mehta", org: "Acme Corp", domain: "Data & ML", status: "ACTIVE" },
+];
+
+// The single approval queue (M02 — approval_request). Manager approves/rejects/holds.
+export const MGR_APPROVALS = [
+  { type: "TRAINING", title: "Spring Security Deep Dive", by: "Ghanshyam Dwivedi", batch: "Bennett Batch DevOps", when: "Mon 10:00", status: "PENDING" },
+  { type: "EVENT", title: "Agentic AI Hackathon", by: "Organiser · STU", batch: "—", when: "Jul 18", status: "PENDING" },
+  { type: "TRAINING", title: "Kubernetes Basics", by: "GS Dwivedi", batch: "Bennett Batch DevOps", when: "Wed 14:00", status: "PENDING" },
+  { type: "CANCEL", title: "Docker Intro (cancel)", by: "Organiser · STU", batch: "Agentic AI vs Gen AI", when: "Thu 11:00", status: "PENDING" },
+  { type: "TRAINING", title: "React State Management", by: "GS Dwivedi", batch: "Agentic AI vs Gen AI", when: "Fri 09:00", status: "PENDING" },
+];
+
+// Cohorts (M02 — batch) with enrolment counts.
+export const MGR_BATCHES = [
+  { batch: "Bennett Batch DevOps", org: "State Technical University", branch: "CSE", domain: "DevOps & Cloud", learners: 24, status: "RUNNING" },
+  { batch: "Agentic AI vs Generative AI", org: "State Technical University", branch: "CSE", domain: "AI", learners: 18, status: "PLANNED" },
+  { batch: "Cloud Cohort 3", org: "Acme Corp", branch: "—", domain: "Cloud", learners: 0, status: "PLANNED" },
+];
