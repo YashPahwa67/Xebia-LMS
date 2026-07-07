@@ -21,7 +21,7 @@ export default function TicketsPage() {
   const submit = () => {
     if (!form.subject.trim()) return toast.error("Subject is required");
     setRows((prev) => [
-      { subject: form.subject, trainer: "GS Dwivedi", status: "OPEN", created: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) },
+      { subject: form.subject, trainer: "Trainer", status: "OPEN", created: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) },
       ...prev,
     ]);
     toast.success("Ticket raised");

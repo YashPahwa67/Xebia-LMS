@@ -13,14 +13,14 @@ export const ORGANISER_OVERVIEW = {
 };
 
 // Trainers assigned to the organiser's org (M02 link, read here).
-export const ORG_TRAINERS = ["GS Dwivedi", "Rohan Mehta", "Priya Sharma"];
+export const ORG_TRAINERS = ["Trainer", "Rohan Mehta", "Priya Sharma"];
 export const ORG_DOMAINS = ["Full Stack", "DevOps & Cloud", "AI", "Data & ML"];
 export const ORG_BATCHES = ["Bennett Batch DevOps", "Agentic AI vs Generative AI", "Cloud Cohort 3", "Full Stack Batch A"];
 export const ORG_BRANCHES = ["CSE", "IT", "ECE", "—"];
 
 // Trainer availability from Scheduling (M06). FREE windows are proposable; BUSY are not (no double-booking).
 export const TRAINER_AVAILABILITY = {
-  "GS Dwivedi": [
+  "Trainer": [
     { id: "gd-mon", day: "Mon", time: "10:00 – 11:30", state: "FREE" },
     { id: "gd-tue", day: "Tue", time: "14:00 – 15:30", state: "BUSY" },
     { id: "gd-wed", day: "Wed", time: "11:00 – 12:30", state: "FREE" },
@@ -40,14 +40,14 @@ export const TRAINER_AVAILABILITY = {
 
 // Submitted training proposals / bookings (M03 proposal_draft → M06 booking lifecycle).
 export const ORG_PROPOSALS = [
-  { id: "p1", topic: "Spring Security Deep Dive", trainer: "GS Dwivedi", batch: "Bennett Batch DevOps", domain: "Full Stack", slot: "Mon 10:00 – 11:30", mode: "ONLINE", venue: "—", status: "PENDING" },
-  { id: "p2", topic: "Kubernetes Basics", trainer: "GS Dwivedi", batch: "Bennett Batch DevOps", domain: "DevOps & Cloud", slot: "Wed 11:00 – 12:30", mode: "ONSITE", venue: "Lab 2, Floor 3", status: "CONFIRMED" },
+  { id: "p1", topic: "Spring Security Deep Dive", trainer: "Trainer", batch: "Bennett Batch DevOps", domain: "Full Stack", slot: "Mon 10:00 – 11:30", mode: "ONLINE", venue: "—", status: "PENDING" },
+  { id: "p2", topic: "Kubernetes Basics", trainer: "Trainer", batch: "Bennett Batch DevOps", domain: "DevOps & Cloud", slot: "Wed 11:00 – 12:30", mode: "ONSITE", venue: "Lab 2, Floor 3", status: "CONFIRMED" },
   { id: "p3", topic: "Agentic AI Intro", trainer: "Rohan Mehta", batch: "Agentic AI vs Generative AI", domain: "AI", slot: "Mon 13:00 – 14:30", mode: "ONLINE", venue: "—", status: "PENDING" },
 ];
 
 // Trainer feedback the organiser gives (M03 — trainer_feedback, routed to trainer + Manager).
 export const ORG_FEEDBACK = [
-  { id: "f1", trainer: "GS Dwivedi", batch: "Bennett Batch DevOps", rating: 5, notes: "Outstanding delivery and learner engagement.", created: "Jun 27, 2026" },
+  { id: "f1", trainer: "Trainer", batch: "Bennett Batch DevOps", rating: 5, notes: "Outstanding delivery and learner engagement.", created: "Jun 27, 2026" },
   { id: "f2", trainer: "Rohan Mehta", batch: "Agentic AI vs Generative AI", rating: 4, notes: "Great content; pace slightly fast in week 2.", created: "Jun 22, 2026" },
 ];
 
@@ -84,7 +84,7 @@ export const PUBLISHED_COURSES = [
 
 // Candidate learners for batch-wise enrolment, by branch (M03 — student_add_request).
 export const ENROLMENT_CANDIDATES = [
-  { learner: "Ghanshyam Dwivedi", email: "learner@xebia.lms", branch: "CSE" },
+  { learner: "Learner", email: "learner@xebia.lms", branch: "CSE" },
   { learner: "Aryan K.", email: "aryan@xebia.lms", branch: "CSE" },
   { learner: "Priya S.", email: "priya@xebia.lms", branch: "IT" },
   { learner: "Neha R.", email: "neha@xebia.lms", branch: "ECE" },

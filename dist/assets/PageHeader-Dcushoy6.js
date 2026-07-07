@@ -1,0 +1,1 @@
+import{j as e}from"./index-DB78N1PL.js";function r({title:s,subtitle:t,action:x}){return e.jsxs("div",{className:"mb-6 flex items-start justify-between gap-4",children:[e.jsxs("div",{children:[e.jsx("h1",{className:"text-2xl font-bold text-ink dark:text-white",children:s}),t&&e.jsx("p",{className:"mt-1 text-sm text-muted dark:text-white/60",children:t})]}),x]})}export{r as P};

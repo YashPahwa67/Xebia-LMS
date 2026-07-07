@@ -1,0 +1,1 @@
+import{j as t}from"./index-DB78N1PL.js";import{l as a}from"./logo-DiSV0IYp.js";function i({className:o="h-8"}){return t.jsx("img",{src:a,alt:"Xebia",className:`${o} w-auto object-contain`})}export{i as L};

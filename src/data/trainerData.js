@@ -1,7 +1,7 @@
 // Mock data for the Trainer (Trainer Workspace) portal. Stands in for API responses (M04).
 
 export const TRAINER_OVERVIEW = {
-  trainer: { name: "GS Dwivedi", email: "trainer@xebia.lms", domain: "Full Stack · DevOps" },
+  trainer: { name: "Trainer", email: "trainer@xebia.lms", domain: "Full Stack · DevOps" },
   stats: [
     { id: "courses", value: 4, label: "Authored courses", tone: "ink" },
     { id: "published", value: 3, label: "Published", tone: "ink" },
@@ -99,7 +99,7 @@ export const TRAINER_BATCHES = [
 // Learner rosters per batch (M04 — assigned-batch views & rosters).
 export const TRAINER_ROSTERS = {
   "Bennett Batch DevOps": [
-    { learner: "Ghanshyam Dwivedi", email: "learner@xebia.lms", progress: 68, avgScore: 84, attendance: 92 },
+    { learner: "Learner", email: "learner@xebia.lms", progress: 68, avgScore: 84, attendance: 92 },
     { learner: "Aryan K.", email: "aryan@xebia.lms", progress: 54, avgScore: 71, attendance: 88 },
     { learner: "Priya S.", email: "priya@xebia.lms", progress: 81, avgScore: 90, attendance: 96 },
     { learner: "Neha R.", email: "neha@xebia.lms", progress: 42, avgScore: 63, attendance: 80 },
@@ -112,7 +112,7 @@ export const TRAINER_ROSTERS = {
 
 // Learner submissions awaiting evaluation / AI-score override (M04 — trainer_evaluation).
 export const SUBMISSIONS = [
-  { learner: "Ghanshyam Dwivedi", test: "Spring Boot REST API", course: "Java Full Stack", aiScore: 88, status: "PENDING_REVIEW" },
+  { learner: "Learner", test: "Spring Boot REST API", course: "Java Full Stack", aiScore: 88, status: "PENDING_REVIEW" },
   { learner: "Aryan K.", test: "React Hooks Assignment", course: "React.js Essentials", aiScore: 74, status: "PENDING_REVIEW" },
   { learner: "Priya S.", test: "Docker Compose Lab", course: "DevOps & Cloud Foundations", aiScore: 91, status: "GRADED" },
   { learner: "Neha R.", test: "React Hooks Assignment", course: "React.js Essentials", aiScore: 62, status: "PENDING_REVIEW" },
@@ -120,7 +120,7 @@ export const SUBMISSIONS = [
 
 // Trainer→learner qualitative feedback (M04 — learner_feedback).
 export const LEARNER_FEEDBACK = [
-  { learner: "Ghanshyam Dwivedi", batch: "Bennett Batch DevOps", notes: "Excellent grasp of Spring Security. Keep pushing on testing depth.", created: "Jun 27, 2026" },
+  { learner: "Learner", batch: "Bennett Batch DevOps", notes: "Excellent grasp of Spring Security. Keep pushing on testing depth.", created: "Jun 27, 2026" },
   { learner: "Aryan K.", batch: "Bennett Batch DevOps", notes: "Solid effort; revisit React reconciliation and keys.", created: "Jun 24, 2026" },
 ];
 
@@ -140,7 +140,7 @@ export const TRAINER_TASKS = [
 
 // Learner-raised tickets for the trainer to answer (M04 — ticket).
 export const TRAINER_TICKETS = [
-  { subject: "Clarification on JWT refresh rotation", learner: "Ghanshyam Dwivedi", status: "OPEN", created: "Jun 26, 2026" },
+  { subject: "Clarification on JWT refresh rotation", learner: "Learner", status: "OPEN", created: "Jun 26, 2026" },
   { subject: "Docker volume not persisting", learner: "Priya S.", status: "OPEN", created: "Jul 1, 2026" },
   { subject: "React key warning in list", learner: "Aryan K.", status: "ANSWERED", created: "Jun 24, 2026" },
 ];

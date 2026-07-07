@@ -48,7 +48,7 @@ export const DASH = {
 };
 
 export const TRAINEE_OVERVIEW = {
-  learner: { name: "Ghanshyam Dwivedi", email: "learner@xebia.lms", domain: "DevOps & Cloud" },
+  learner: { name: "Learner", email: "learner@xebia.lms", domain: "DevOps & Cloud" },
   totals: { enrolledCourses: 3, activeBatches: 2, completedCourses: 5, certificates: 4 },
   progress: 68,
   attendancePct: 92,
@@ -62,14 +62,14 @@ export const TRAINEE_OVERVIEW = {
 };
 
 export const MY_COURSES = [
-  { course: "Java Full Stack", author: "GS Dwivedi", domain: "Full Stack", lectures: 60, completed: 41, status: "IN PROGRESS" },
-  { course: "DevOps & Cloud Foundations", author: "GS Dwivedi", domain: "DevOps & Cloud", lectures: 48, completed: 48, status: "COMPLETED" },
-  { course: "React.js Essentials", author: "GS Dwivedi", domain: "Full Stack", lectures: 32, completed: 12, status: "IN PROGRESS" },
+  { course: "Java Full Stack", author: "Trainer", domain: "Full Stack", lectures: 60, completed: 41, status: "IN PROGRESS" },
+  { course: "DevOps & Cloud Foundations", author: "Trainer", domain: "DevOps & Cloud", lectures: 48, completed: 48, status: "COMPLETED" },
+  { course: "React.js Essentials", author: "Trainer", domain: "Full Stack", lectures: 32, completed: 12, status: "IN PROGRESS" },
 ];
 
 export const MY_BATCHES = [
-  { batch: "Bennett Batch DevOps", meta: "6 Months", org: "State Technical University", trainer: "GS Dwivedi", status: "ACTIVE" },
-  { batch: "Agentic AI vs Generative AI", meta: "3 Months (12 Weeks)", org: "State Technical University", trainer: "GS Dwivedi", status: "PENDING" },
+  { batch: "Bennett Batch DevOps", meta: "6 Months", org: "State Technical University", trainer: "Trainer", status: "ACTIVE" },
+  { batch: "Agentic AI vs Generative AI", meta: "3 Months (12 Weeks)", org: "State Technical University", trainer: "Trainer", status: "PENDING" },
 ];
 
 export const MY_ASSIGNMENTS = [
@@ -80,9 +80,9 @@ export const MY_ASSIGNMENTS = [
 ];
 
 export const MY_SCHEDULE = [
-  { title: "React State Management", course: "React.js Essentials", day: "Mon", time: "10:00 – 11:30", trainer: "GS Dwivedi", mode: "ONLINE" },
-  { title: "Spring Security Deep Dive", course: "Java Full Stack", day: "Wed", time: "14:00 – 15:30", trainer: "GS Dwivedi", mode: "ONLINE" },
-  { title: "Kubernetes Basics", course: "DevOps & Cloud Foundations", day: "Thu", time: "11:00 – 12:30", trainer: "GS Dwivedi", mode: "CLASSROOM" },
+  { title: "React State Management", course: "React.js Essentials", day: "Mon", time: "10:00 – 11:30", trainer: "Trainer", mode: "ONLINE" },
+  { title: "Spring Security Deep Dive", course: "Java Full Stack", day: "Wed", time: "14:00 – 15:30", trainer: "Trainer", mode: "ONLINE" },
+  { title: "Kubernetes Basics", course: "DevOps & Cloud Foundations", day: "Thu", time: "11:00 – 12:30", trainer: "Trainer", mode: "CLASSROOM" },
 ];
 
 export const MY_CERTIFICATES = [
@@ -106,7 +106,7 @@ export const MY_AWARDS = [
 export const COURSE_DETAILS = {
   "Java Full Stack": {
     domain: "Full Stack",
-    author: "GS Dwivedi",
+    author: "Trainer",
     version: 3,
     modules: [
       {
@@ -139,7 +139,7 @@ export const COURSE_DETAILS = {
   },
   "React.js Essentials": {
     domain: "Full Stack",
-    author: "GS Dwivedi",
+    author: "Trainer",
     version: 1,
     modules: [
       {
@@ -158,7 +158,7 @@ export const COURSE_DETAILS = {
   },
   "DevOps & Cloud Foundations": {
     domain: "DevOps & Cloud",
-    author: "GS Dwivedi",
+    author: "Trainer",
     version: 2,
     modules: [
       {
@@ -219,6 +219,6 @@ export const MY_EVENTS = [
 
 // Tickets the learner raised to trainers (M05 — learner_ticket).
 export const MY_TICKETS = [
-  { subject: "Clarification on JWT refresh rotation", trainer: "GS Dwivedi", status: "ANSWERED", created: "Jun 26, 2026" },
-  { subject: "Docker volume not persisting", trainer: "GS Dwivedi", status: "OPEN", created: "Jul 1, 2026" },
+  { subject: "Clarification on JWT refresh rotation", trainer: "Trainer", status: "ANSWERED", created: "Jun 26, 2026" },
+  { subject: "Docker volume not persisting", trainer: "Trainer", status: "OPEN", created: "Jul 1, 2026" },
 ];

@@ -14,7 +14,7 @@ export const MANAGER_OVERVIEW = {
 
 // Onboarded trainers (M02 — trainer).
 export const MGR_TRAINERS = [
-  { name: "GS Dwivedi", type: "INTERNAL", domain: "Full Stack · DevOps", orgs: 2, status: "ACTIVE" },
+  { name: "Trainer", type: "INTERNAL", domain: "Full Stack · DevOps", orgs: 2, status: "ACTIVE" },
   { name: "Rohan Mehta", type: "EXTERNAL", domain: "Data & ML", orgs: 1, status: "ACTIVE" },
   { name: "Priya Sharma", type: "INTERNAL", domain: "Cloud", orgs: 1, status: "INACTIVE" },
 ];
@@ -28,18 +28,18 @@ export const MGR_ORGS = [
 
 // Trainer↔org/domain assignments (M02 — trainer_org_link).
 export const MGR_ASSIGNMENTS = [
-  { trainer: "GS Dwivedi", org: "State Technical University", domain: "DevOps & Cloud", status: "ACTIVE" },
-  { trainer: "GS Dwivedi", org: "Bennett University", domain: "Full Stack", status: "ACTIVE" },
+  { trainer: "Trainer", org: "State Technical University", domain: "DevOps & Cloud", status: "ACTIVE" },
+  { trainer: "Trainer", org: "Bennett University", domain: "Full Stack", status: "ACTIVE" },
   { trainer: "Rohan Mehta", org: "Acme Corp", domain: "Data & ML", status: "ACTIVE" },
 ];
 
 // The single approval queue (M02 — approval_request). Manager approves/rejects/holds.
 export const MGR_APPROVALS = [
-  { type: "TRAINING", title: "Spring Security Deep Dive", by: "Ghanshyam Dwivedi", batch: "Bennett Batch DevOps", when: "Mon 10:00", status: "PENDING" },
+  { type: "TRAINING", title: "Spring Security Deep Dive", by: "Learner", batch: "Bennett Batch DevOps", when: "Mon 10:00", status: "PENDING" },
   { type: "EVENT", title: "Agentic AI Hackathon", by: "Organiser · STU", batch: "—", when: "Jul 18", status: "PENDING" },
-  { type: "TRAINING", title: "Kubernetes Basics", by: "GS Dwivedi", batch: "Bennett Batch DevOps", when: "Wed 14:00", status: "PENDING" },
+  { type: "TRAINING", title: "Kubernetes Basics", by: "Trainer", batch: "Bennett Batch DevOps", when: "Wed 14:00", status: "PENDING" },
   { type: "CANCEL", title: "Docker Intro (cancel)", by: "Organiser · STU", batch: "Agentic AI vs Gen AI", when: "Thu 11:00", status: "PENDING" },
-  { type: "TRAINING", title: "React State Management", by: "GS Dwivedi", batch: "Agentic AI vs Gen AI", when: "Fri 09:00", status: "PENDING" },
+  { type: "TRAINING", title: "React State Management", by: "Trainer", batch: "Agentic AI vs Gen AI", when: "Fri 09:00", status: "PENDING" },
 ];
 
 // Cohorts (M02 — batch) with enrolment counts.

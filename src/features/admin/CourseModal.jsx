@@ -30,7 +30,7 @@ export default function CourseModal({ open, onClose, initial, onSubmit }) {
     onSubmit({
       course: form.course, description: form.description, lectures: Number(form.lectures),
       days: form.days.join(", "), duration: `${form.days.length ? Math.round(form.lectures / form.days.length) : form.lectures}d`,
-      author: initial?.author || "GS Dwivedi", status: initial?.status || "PENDING",
+      author: initial?.author || "Trainer", status: initial?.status || "PENDING",
     });
     toast.success(isEdit ? "Course updated" : "Course created");
     onClose();

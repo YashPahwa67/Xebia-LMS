@@ -31,8 +31,8 @@ export const PERMISSIONS = [
 
 export const USERS = [
   { email: "admin@xebia.lms", name: "Platform Admin", role: "ADMIN", status: "ACTIVE", self: true },
-  { email: "trainer@xebia.lms", name: "GS Dwivedi", role: "TRAINER", status: "ACTIVE" },
-  { email: "learner@xebia.lms", name: "Ghanshyam Dwivedi", role: "LEARNER", status: "ACTIVE" },
+  { email: "trainer@xebia.lms", name: "Trainer", role: "TRAINER", status: "ACTIVE" },
+  { email: "learner@xebia.lms", name: "Learner", role: "LEARNER", status: "ACTIVE" },
 ];
 
 export const ORGANISATIONS = [
@@ -52,7 +52,7 @@ export const PARENTS = [
 
 export const LEARNERS = [
   {
-    learner: "Ghanshyam Dwivedi",
+    learner: "Learner",
     email: "learner@xebia.lms",
     organisation: "State Technical University",
     type: "University",
@@ -68,7 +68,7 @@ export const BATCHES = [
 ];
 
 export const COURSES = [
-  { course: "Java Full Stack", author: "GS Dwivedi", days: "Mon, Wed, Thu", duration: "16d", lectures: 60, status: "PENDING" },
+  { course: "Java Full Stack", author: "Trainer", days: "Mon, Wed, Thu", duration: "16d", lectures: 60, status: "PENDING" },
 ];
 
 export const ROLES = [
